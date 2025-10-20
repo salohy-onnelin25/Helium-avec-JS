@@ -1,0 +1,77 @@
+header {
+    min-height: 100vh;
+    overflow: hidden;
+    margin: 0 20px;
+    .Top {
+        min-height: 5vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 10px;
+        h1 {
+            font-size: clamp(1rem, 3vw, 3rem);
+        }
+        nav {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+            }
+        }
+    }
+    .bottom {
+        min-height: 95vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        .networks {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2 {
+                font-size: clamp(1rem, 5vw, 5rem);
+            }
+            h3 {
+                color: $peurple;
+                margin: 30px 0;
+                font-size: clamp(0.8rem, 2.5vw, 2.5rem);
+            }
+            p {
+                word-spacing: 3px;
+                line-height: 1.5;
+                font-size: clamp(0.7rem, 1.5vw, 1.5rem);
+            }
+        }
+        .imgs {
+            @include background-img("../Imgs/main.png", contain, center, no-repeat, scroll);
+        }
+    }
+    .scroll-down {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+        color: white;
+        animation: blink 1.2s infinite;
+        cursor: pointer;
+        transition: opacity 0.4s ease;
+        opacity: 1;
+        &.hidden {
+            opacity: 0;
+            pointer-events: none;
+            animation: none;
+        }
+    }
+
+    @keyframes blink {
+        0%,
+        100% {
+            opacity: 1;
+            transform: translate(-50%, 0);
+        }
+        50% {
+            opacity: 0.3;
+            transform: translate(-50%, 10px);
+        }
+    }
+}

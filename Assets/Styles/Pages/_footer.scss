@@ -1,0 +1,53 @@
+footer {
+    background: $black;
+    padding: 20px 10px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border-radius: 10px 10px 0 0;
+    .left {
+        h3 {
+            text-align: center;
+            font-size: clamp(1rem, 1.8vw, 1.8rem);
+        }
+        nav {
+            ul {
+                li {
+                    border: 1px solid $peurple;
+                    text-align: center;
+                    margin: 10px 0;
+                    background: $peurple;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+    .right {
+        h3{
+            padding-left: 150px;
+            font-size: clamp(1rem, 1.8vw, 1.8rem);
+        }
+        .image {
+            display: flex;
+            padding-left: 250px;
+            justify-content: space-between;
+            .img1 {
+                cursor: pointer;
+                height: 100px;
+                width: 100px;
+                @include background-img("../Imgs/investlogo2blue.png", contain, center, no-repeat, scroll);
+            }
+            .img2 {
+                cursor: pointer;
+                height: 100px;
+                width: 100px;
+                @include background-img("../Imgs/investlogo3blue.png", contain, center, no-repeat, scroll);
+            }
+            .img3 {
+                cursor: pointer;
+                height: 100px;
+                width: 100px;
+                @include background-img("../Imgs/investlogo4blue.png", contain, center, no-repeat, scroll);
+            }
+        }
+    }
+}
