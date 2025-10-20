@@ -4,12 +4,20 @@ footer {
     display: grid;
     grid-template-columns: 20% 80%;
     border-radius: 10px 10px 0 0;
+    @media (max-width: 750px){
+        grid-template-columns: 30% 70%;
+        @media (max-width: 565px){
+            display: flex;
+            flex-direction: column;
+        }
+    }
     .left {
         h3 {
             text-align: center;
             font-size: clamp(1rem, 1.8vw, 1.8rem);
         }
         nav {
+            margin: 0 10px;
             ul {
                 li {
                     border: 1px solid $peurple;
@@ -17,6 +25,7 @@ footer {
                     margin: 10px 0;
                     background: $peurple;
                     border-radius: 5px;
+                    padding: 10px;
                 }
             }
         }
@@ -25,11 +34,32 @@ footer {
         h3{
             padding-left: 150px;
             font-size: clamp(1rem, 1.8vw, 1.8rem);
+            @media (max-width: 750px){
+                padding-left: 50px;
+                @media (max-width: 650px){
+                    padding-left: 0;
+                    text-align: center;
+                    @media (max-width: 514px){
+                        margin-top: 20px;
+                    }
+                }
+            }
         }
         .image {
             display: flex;
             padding-left: 250px;
             justify-content: space-between;
+            margin-top: 40px;
+            gap: 20px;
+            @media (max-width: 750px){
+                padding-left: 100px;
+                @media (max-width: 650px){
+                       padding: 0 10px;
+                       @media (max-width: 514px){
+                        margin-top: 20px;
+                       } 
+                    }
+            }
             .img1 {
                 cursor: pointer;
                 height: 100px;

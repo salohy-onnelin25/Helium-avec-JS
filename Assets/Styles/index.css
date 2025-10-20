@@ -15,7 +15,7 @@ body a,
 body li {
   text-decoration: none;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
   cursor: pointer;
@@ -70,6 +70,11 @@ header .Top {
   grid-template-columns: 50% 50%;
   margin-top: 10px;
 }
+@media (max-width: 400px) {
+  header .Top {
+    grid-template-columns: 30% 70%;
+  }
+}
 header .Top h1 {
   font-size: clamp(1rem, 3vw, 3rem);
 }
@@ -90,6 +95,18 @@ header .bottom {
   display: grid;
   grid-template-columns: 50% 50%;
 }
+@media (max-width: 565px) {
+  header .bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 50px;
+  }
+}
 header .bottom .networks {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -101,6 +118,15 @@ header .bottom .networks {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media (max-width: 565px) {
+  header .bottom .networks {
+    margin-top: 100px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
 }
 header .bottom .networks h2 {
   font-size: clamp(1rem, 5vw, 5rem);
@@ -121,6 +147,12 @@ header .bottom .imgs {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
+}
+@media (max-width: 565px) {
+  header .bottom .imgs {
+    height: 250px;
+    width: 100%;
+  }
 }
 header .scroll-down {
   position: absolute;
@@ -175,9 +207,28 @@ footer {
   grid-template-columns: 20% 80%;
   border-radius: 10px 10px 0 0;
 }
+@media (max-width: 750px) {
+  footer {
+    grid-template-columns: 30% 70%;
+  }
+}
+@media (max-width: 750px) and (max-width: 565px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 footer .left h3 {
   text-align: center;
   font-size: clamp(1rem, 1.8vw, 1.8rem);
+}
+footer .left nav {
+  margin: 0 10px;
 }
 footer .left nav ul li {
   border: 1px solid rgb(124, 73, 165);
@@ -185,10 +236,27 @@ footer .left nav ul li {
   margin: 10px 0;
   background: rgb(124, 73, 165);
   border-radius: 5px;
+  padding: 10px;
 }
 footer .right h3 {
   padding-left: 150px;
   font-size: clamp(1rem, 1.8vw, 1.8rem);
+}
+@media (max-width: 750px) {
+  footer .right h3 {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 750px) and (max-width: 650px) {
+  footer .right h3 {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 750px) and (max-width: 650px) and (max-width: 514px) {
+  footer .right h3 {
+    margin-top: 20px;
+  }
 }
 footer .right .image {
   display: -webkit-box;
@@ -198,6 +266,23 @@ footer .right .image {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 40px;
+  gap: 20px;
+}
+@media (max-width: 750px) {
+  footer .right .image {
+    padding-left: 100px;
+  }
+}
+@media (max-width: 750px) and (max-width: 650px) {
+  footer .right .image {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 750px) and (max-width: 650px) and (max-width: 514px) {
+  footer .right .image {
+    margin-top: 20px;
+  }
 }
 footer .right .image .img1 {
   cursor: pointer;
