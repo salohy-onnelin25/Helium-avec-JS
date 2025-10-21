@@ -64,21 +64,35 @@ body .circle2 {
 header {
   min-height: 100vh;
   overflow: hidden;
-  margin: 0 20px;
+  width: 100%;
 }
 header .Top {
   min-height: 5vh;
   display: grid;
   grid-template-columns: 50% 50%;
   margin-top: 10px;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
 }
 @media (max-width: 400px) {
   header .Top {
     grid-template-columns: 30% 70%;
   }
 }
+@media (max-width: 400px) and (max-width: 300px) {
+  header .Top {
+    grid-template-columns: 100%;
+  }
+}
 header .Top h1 {
   font-size: clamp(1rem, 2vw, 2rem);
+}
+@media (max-width: 300px) {
+  header .Top h1 {
+    display: none;
+  }
 }
 header .Top nav ul {
   display: -webkit-box;
@@ -92,7 +106,18 @@ header .Top nav ul {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+@media (max-width: 300px) {
+  header .Top nav ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 header .bottom {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
   min-height: 95vh;
   display: grid;
   grid-template-columns: 50% 50%;
@@ -109,7 +134,6 @@ header .bottom {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 50px;
   }
 }
 header .bottom .networks {

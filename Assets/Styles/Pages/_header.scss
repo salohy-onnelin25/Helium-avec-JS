@@ -1,27 +1,44 @@
 header {
     min-height: 100vh;
     overflow: hidden;
-    margin: 0 20px;
+    width: 100%;
     .Top {
         min-height: 5vh;
         display: grid;
         grid-template-columns: 50% 50%;
         margin-top: 10px;
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+        padding: 20px;
         @media (max-width: 400px) {
             grid-template-columns: 30% 70%;
+            @media (max-width: 300px){
+                grid-template-columns: 100%;
+            }
         }
         h1 {
             font-size: clamp(1rem, 2vw, 2rem);
+            @media (max-width: 300px) {
+                display: none;
+            }
         }
         nav {
             ul {
                 display: flex;
                 justify-content: space-between;
                 flex-direction: row;
+                @media (max-width: 300px) {
+                    justify-content: space-between;
+                }
             }
         }
     }
     .bottom {
+        margin: 0 auto;
+        max-width: 1200px;
+        width: 100%;
+        padding:20px;
         min-height: 95vh;
         display: grid;
         grid-template-columns: 50% 50%;
@@ -29,7 +46,6 @@ header {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            gap: 50px;
         }
         .networks {
             display: flex;
@@ -42,14 +58,9 @@ header {
             h2 {
                 font-size: clamp(1.5rem, 5vw, 5rem);
                 span {
-                    // Garantit que le changement de couleur est doux
                     transition: color 0.15s ease-out;
-                    // Définit la couleur par défaut (même si elle est déjà sur le h2)
                     color: $white;
-
-                    // Pour gérer l'espacement si vous voulez un effet différent
                     &.letter-space {
-                        // Un espace normal peut ne pas avoir la bonne taille, on pourrait ajuster
                         padding: 0 0.1em;
                     }
                 }
