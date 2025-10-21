@@ -9,6 +9,7 @@ $white: white;
 $black: black;
 $black1: rgb(49, 48, 48);
 $peurple: rgb(124, 73, 165);
+$green :green;
 
 @mixin background-img($url, $size: cover, $position: center, $repeat: no-repeat, $attachment: scroll) {
     background-image: url(#{$url});
@@ -29,7 +30,6 @@ body {
         text-decoration: none;
         color: $white;
         font-size: clamp(0.8rem, 1rem, 1rem);
-        transition: color 0.3s ease;
         cursor: pointer;
     }
     

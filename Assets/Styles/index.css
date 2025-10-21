@@ -18,8 +18,6 @@ body li {
   text-decoration: none;
   color: white;
   font-size: 1rem;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
   cursor: pointer;
 }
 body #cursor {
@@ -105,6 +103,18 @@ header .Top nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+header .Top nav ul li a {
+  display: inline-block;
+  -webkit-transition: color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: color 0.3s ease, -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease, -webkit-transform 0.3s ease;
+}
+header .Top nav ul li a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  font-weight: bold;
 }
 @media (max-width: 300px) {
   header .Top nav ul {
@@ -273,6 +283,20 @@ footer .left nav ul li {
   background: rgb(124, 73, 165);
   border-radius: 5px;
   padding: 10px;
+  -webkit-transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+footer .left nav ul li a {
+  color: white;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+footer .left nav ul li:hover {
+  background-color: white;
+  border-color: white;
+}
+footer .left nav ul li:hover a {
+  color: black;
 }
 footer .right h3 {
   padding-left: 150px;

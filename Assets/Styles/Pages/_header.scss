@@ -28,6 +28,16 @@ header {
                 display: flex;
                 justify-content: space-between;
                 flex-direction: row;
+                li {
+                    a {
+                        display: inline-block; 
+                        transition: transform 0.3s ease, color 0.3s ease;
+                    }
+                }
+                li a:hover {
+                    transform: scale(1.1);
+                    font-weight: bold;
+                }
                 @media (max-width: 300px) {
                     justify-content: space-between;
                 }
