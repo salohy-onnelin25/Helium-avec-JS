@@ -65,7 +65,7 @@ header {
   width: 100%;
 }
 header .Top {
-  min-height: 5vh;
+  min-height: 10vh;
   display: grid;
   grid-template-columns: 50% 50%;
   margin-top: 10px;
@@ -128,7 +128,7 @@ header .bottom {
   max-width: 1200px;
   width: 100%;
   padding: 20px;
-  min-height: 90vh;
+  min-height: 80vh;
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -144,6 +144,7 @@ header .bottom {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 40px;
   }
 }
 header .bottom .networks {
@@ -201,7 +202,7 @@ header .bottom .imgs {
   }
 }
 header .scroll-down {
-  min-height: 5vh;
+  min-height: 10vh;
   position: absolute;
   bottom: 20px;
   left: 50%;
