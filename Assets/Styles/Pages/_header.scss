@@ -55,8 +55,7 @@ header {
         @media (max-width: 565px) {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            gap: 30px;
+            gap: 20px;
         }
         .networks {
             display: flex;
@@ -78,7 +77,7 @@ header {
             }
             h3 {
                 color: $peurple;
-                margin: 30px 0;
+                margin: 10px 0;
                 font-size: clamp(1rem, 2.5vw, 2.5rem);
             }
             p {

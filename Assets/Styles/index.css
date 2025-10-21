@@ -141,10 +141,7 @@ header .bottom {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 30px;
+    gap: 20px;
   }
 }
 header .bottom .networks {
@@ -180,7 +177,7 @@ header .bottom .networks h2 span.letter-space {
 }
 header .bottom .networks h3 {
   color: rgb(151, 61, 224);
-  margin: 30px 0;
+  margin: 10px 0;
   font-size: clamp(1rem, 2.5vw, 2.5rem);
 }
 header .bottom .networks p {
