@@ -19,6 +19,8 @@ $peurple: rgb(124, 73, 165);
 }
 
 body {
+    max-width: 1200PX;
+    margin: 0 auto;
     cursor: none;
     background: $black1;
     color: $white;
@@ -55,16 +57,16 @@ body {
     }
     .circle1 {
         background: rgba(255, 0, 0, 0.384);
-        width: 40px;
-        height: 40px;
+        width: 80px;
+        height: 80px;
         transition:
             top 0.1s ease,
             left 0.1s ease;
     }
     .circle2 {
         background: rgba(128, 128, 128, 0.377);
-        width: 80px;
-        height: 80px;
+        width: 250px;
+        height: 250px;
         transition:
             top 0.5s ease,
             left 0.15s ease;

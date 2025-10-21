@@ -7,6 +7,8 @@
 }
 
 body {
+  max-width: 1200PX;
+  margin: 0 auto;
   cursor: none;
   background: rgb(49, 48, 48);
   color: white;
@@ -46,15 +48,15 @@ body .trail {
 }
 body .circle1 {
   background: rgba(255, 0, 0, 0.384);
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   -webkit-transition: top 0.1s ease, left 0.1s ease;
   transition: top 0.1s ease, left 0.1s ease;
 }
 body .circle2 {
   background: rgba(128, 128, 128, 0.377);
-  width: 80px;
-  height: 80px;
+  width: 250px;
+  height: 250px;
   -webkit-transition: top 0.5s ease, left 0.15s ease;
   transition: top 0.5s ease, left 0.15s ease;
 }
@@ -104,6 +106,9 @@ header .bottom {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 50px;
   }
 }
@@ -121,7 +126,6 @@ header .bottom .networks {
 }
 @media (max-width: 565px) {
   header .bottom .networks {
-    margin-top: 50px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -129,12 +133,20 @@ header .bottom .networks {
   }
 }
 header .bottom .networks h2 {
-  font-size: clamp(1rem, 5vw, 5rem);
+  font-size: clamp(1.5rem, 5vw, 5rem);
+}
+header .bottom .networks h2 span {
+  -webkit-transition: color 0.15s ease-out;
+  transition: color 0.15s ease-out;
+  color: white;
+}
+header .bottom .networks h2 span.letter-space {
+  padding: 0 0.1em;
 }
 header .bottom .networks h3 {
   color: rgb(124, 73, 165);
   margin: 30px 0;
-  font-size: clamp(0.8rem, 2.5vw, 2.5rem);
+  font-size: clamp(1rem, 2.5vw, 2.5rem);
 }
 header .bottom .networks p {
   word-spacing: 3px;
