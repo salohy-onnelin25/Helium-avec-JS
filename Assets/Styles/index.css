@@ -128,7 +128,7 @@ header .bottom {
   max-width: 1200px;
   width: 100%;
   padding: 20px;
-  min-height: 95vh;
+  min-height: 90vh;
   display: grid;
   grid-template-columns: 50% 50%;
 }
@@ -201,6 +201,7 @@ header .bottom .imgs {
   }
 }
 header .scroll-down {
+  min-height: 5vh;
   position: absolute;
   bottom: 20px;
   left: 50%;
