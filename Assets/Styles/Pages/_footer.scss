@@ -4,7 +4,7 @@ footer {
     display: grid;
     grid-template-columns: 20% 80%;
     border-radius: 10px 10px 0 0;
-    @media (max-width: 750px){
+    @media (max-width: 825px){
         grid-template-columns: 30% 70%;
         @media (max-width: 565px){
             display: flex;
