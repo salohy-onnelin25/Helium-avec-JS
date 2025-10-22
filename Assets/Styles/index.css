@@ -62,13 +62,13 @@ body .circle2 {
 
 .contact-alert {
   position: fixed;
-  bottom: 20px; /* Position en bas de l'écran */
+  bottom: 10px; /* Position en bas de l'écran */
   right: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%); /* Masqué par défaut (déplacé complètement à droite) */
   background: rgb(151, 61, 224); /* Utilise ta couleur violette */
   color: white;
-  padding: 10px 15px;
+  padding: 5px 15px;
   border-radius: 5px 0 0 5px; /* Bord arrondi seulement à gauche */
   -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -103,7 +103,7 @@ body .circle2 {
   background: none;
   border: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
   line-height: 1; /* Pour centrer le 'X' */
   padding: 0;

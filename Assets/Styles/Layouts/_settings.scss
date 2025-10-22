@@ -75,12 +75,12 @@ body {
 
 .contact-alert {
     position: fixed;
-    bottom: 20px; /* Position en bas de l'écran */
+    bottom: 10px; /* Position en bas de l'écran */
     right: 0;
     transform: translateX(100%); /* Masqué par défaut (déplacé complètement à droite) */
     background: $peurple; /* Utilise ta couleur violette */
     color: $white;
-    padding: 10px 15px;
+    padding: 5px 15px;
     border-radius: 5px 0 0 5px; /* Bord arrondi seulement à gauche */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     z-index: 10000;
@@ -98,7 +98,7 @@ body {
     color: $white;
     text-decoration: none;
     margin-right: 15px;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 1rem, 1rem);
     font-weight: bold;
 }
 
@@ -106,7 +106,7 @@ body {
     background: none;
     border: none;
     color: $white;
-    font-size: 1.5rem;
+    font-size: clamp(0.8rem, 1rem, 1rem);
     cursor: pointer;
     line-height: 1; /* Pour centrer le 'X' */
     padding: 0;
