@@ -394,7 +394,7 @@ footer .right .image {
 }
 @media (max-width: 750px) and (max-width: 650px) and (max-width: 514px) {
   footer .right .image {
-    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 footer .right .image .img1 {
