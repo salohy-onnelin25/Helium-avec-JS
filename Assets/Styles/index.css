@@ -66,7 +66,7 @@ body .circle2 {
   right: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%); /* Masqué par défaut (déplacé complètement à droite) */
-  background: rgb(151, 61, 224); /* Utilise ta couleur violette */
+  background: rgba(151, 61, 224, 0.336); /* Utilise ta couleur violette */
   color: white;
   padding: 5px 15px;
   border-radius: 5px 0 0 5px; /* Bord arrondi seulement à gauche */

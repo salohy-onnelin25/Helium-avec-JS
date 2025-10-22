@@ -9,7 +9,7 @@ $white: white;
 $black: black;
 $black1: rgb(49, 48, 48);
 $peurple: rgb(151, 61, 224);
-$green :green;
+$peurple1: rgba(151, 61, 224, 0.336);
 
 @mixin background-img($url, $size: cover, $position: center, $repeat: no-repeat, $attachment: scroll) {
     background-image: url(#{$url});
@@ -78,7 +78,7 @@ body {
     bottom: 10px; /* Position en bas de l'écran */
     right: 0;
     transform: translateX(100%); /* Masqué par défaut (déplacé complètement à droite) */
-    background: $peurple; /* Utilise ta couleur violette */
+    background: $peurple1; /* Utilise ta couleur violette */
     color: $white;
     padding: 5px 15px;
     border-radius: 5px 0 0 5px; /* Bord arrondi seulement à gauche */
