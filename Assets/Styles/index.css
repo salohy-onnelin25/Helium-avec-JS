@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   list-style: none;
   padding: 0;
@@ -57,6 +58,59 @@ body .circle2 {
   height: 250px;
   -webkit-transition: top 0.5s ease, left 0.15s ease;
   transition: top 0.5s ease, left 0.15s ease;
+}
+
+.contact-alert {
+  position: fixed;
+  bottom: 20px; /* Position en bas de l'écran */
+  right: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%); /* Masqué par défaut (déplacé complètement à droite) */
+  background: rgb(151, 61, 224); /* Utilise ta couleur violette */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px 0 0 5px; /* Bord arrondi seulement à gauche */
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: -webkit-transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Animation de glissement */
+}
+
+/* État affiché de l'alerte */
+.contact-alert.show {
+  -webkit-transform: translateX(0);
+          transform: translateX(0); /* Fait glisser l'alerte pour qu'elle soit visible */
+}
+
+.contact-alert .contact-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.contact-alert .close-alert {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 1; /* Pour centrer le 'X' */
+  padding: 0;
+}
+
+.contact-alert .close-alert:hover {
+  color: rgb(221.72, 192.92, 245.08); /* Éclaircit la couleur du 'X' au survol */
 }
 
 header {
